@@ -1,0 +1,25 @@
+.title{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    margin: 20px;
+}
+
+.location-btn{
+    display: block;
+    margin: 50px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 220px;
+    padding: 10px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 24px;
+    font-weight: 600px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(228, 116, 31, 0.858);
+}
+
+a{
+    text-decoration: none;
+}
