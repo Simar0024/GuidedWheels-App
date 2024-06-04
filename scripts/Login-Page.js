@@ -9,7 +9,7 @@ document.querySelector('.js-login-btn').addEventListener('click',()=>{
         alert('Enter the credentials');
     else{
         if(details.length === 0)
-            displayContent.innerHTML = `User not registered! <span class="sign-up-link"><a href = "../structure/Signup-Page.html">Register here</a></span>`;
+            displayContent.innerHTML = `User not registered! <span class="sign-up-link"><a href = "Signup-Page.html">Register here</a></span>`;
         else{
         const enteredPassword = document.querySelector('.password-input').value;
         const enteredEmail = document.querySelector('.email-address').value;
