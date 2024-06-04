@@ -9,7 +9,7 @@ document.querySelector('.js-login-btn').addEventListener('click',()=>{
         alert('Enter the credentials');
     else{
         if(details.length === 0)
-            displayContent.innerHTML = `User not registered! <span class="sign-up-link"><a href = "Signup-Page.html">Register here</a></span>`;
+            displayContent.innerHTML = `User not registered! <span class="sign-up-link"><a href = "../Signup-Page.html">Register here</a></span>`;
         else{
         const enteredPassword = document.querySelector('.password-input').value;
         const enteredEmail = document.querySelector('.email-address').value;
@@ -27,7 +27,7 @@ document.querySelector('.js-login-btn').addEventListener('click',()=>{
 
         if(enteredPassword === storedPassword && enteredEmail === storedEmail){
             displayContent.textContent = 'Password & Email Correct! Welcome';
-            let html = '<a href="../structure/Dashboard.html">Login</a>';
+            let html = '<a href="../Dashboard.html">Login</a>';
             document.querySelector('.js-login-btn').innerHTML = html;
         }
         else if(enteredPassword !== storedPassword && enteredEmail === storedEmail || enteredEmail !== storedEmail &&           enteredPassword === storedPassword)
@@ -36,7 +36,7 @@ document.querySelector('.js-login-btn').addEventListener('click',()=>{
         }
         else
         {
-            displayContent.innerHTML = `User not registered! <span class="sign-up-link"><a href = "../structure/Signup-Page.html">Register here</a></span>`;
+            displayContent.innerHTML = `User not registered! <span class="sign-up-link"><a href = "../Signup-Page.html">Register here</a></span>`;
         }
         });
     }       
