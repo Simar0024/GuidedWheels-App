@@ -22,7 +22,7 @@ document.querySelector('.js-sign-up-btn').addEventListener('click',()=>{
         localStorage.setItem('user',JSON.stringify(user_details));
         clearInput();
     }
-    displaySignContent.innerHTML = `Successfully registered! <span class="login-link"><a href = "../structure/Login-Page.html">
+    displaySignContent.innerHTML = `Successfully registered! <span class="login-link"><a href = "Login-Page.html">
     Login here</a>
     </span>`;
 });
